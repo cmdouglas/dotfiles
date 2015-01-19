@@ -8,3 +8,5 @@ export EDITOR='vim'
 
 # CTAGS Sorting in VIM/Emacs is better behaved with this in place
 export LC_COLLATE=C
+
+export PYTHONPATH=/usr/local/lib/python3.4/site-packages/:$PYTHONPATH

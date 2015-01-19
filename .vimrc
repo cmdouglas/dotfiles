@@ -21,7 +21,7 @@ set ttymouse=xterm2 " force mouse support for screen
 set mouse=a " terminal mouse when possible
 set wildmenu " show a menu of completions like zsh
 set wildmode=full " complete longest common prefix first
-set wildignore+=.*.sw*,__pycache__,*.pyc
+set wildignore+=.*.sw*,__pycache__,*.pyc,bin/,
 
 " miscellany
 set autoread " reload changed files
