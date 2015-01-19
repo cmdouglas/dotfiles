@@ -35,10 +35,13 @@ setopt correctall # spelling correction for arguments
 
 # ===== Prompt
 setopt prompt_subst # Enable parameter expansion, command substitution, and arithmetic expansion in the prompt
-setopt transient_rprompt # only show the rprompt on the current prompt
+setopt transient_rprompt # right hand prompt only shows on the current line
 
 # ===== Scripts and Functions
 setopt multios # perform implicit tees or cats when multiple redirections are attempted
+
+# make python venvs not shit all over my prompt (I'm doing this manually)
+VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # report process execution if it's longer than 5 seconds
 REPORTTIME=5
