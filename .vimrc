@@ -17,7 +17,7 @@ set expandtab
 
 set ignorecase
 set smartcase
-set showbreak=↳\ 
+set showbreak=↳\
 set ttymouse=xterm2 " force mouse support for screen
 set mouse=a " terminal mouse when possible
 set wildmenu " show a menu of completions like zsh
