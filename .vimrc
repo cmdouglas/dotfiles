@@ -55,7 +55,7 @@ let g:syntastic_python_checkers = ['flake8']
 let g:jedi#popup_on_dot = 0
 " " messing with my completeopt is super rude
 let g:jedi#auto_vim_configuration = 0
-let g:jedi#show_call_signatures = 0
+let g:jedi#show_call_signature=0
 
 " Python-mode; disable linting, use syntastic
 let g:pymode_lint = 0
