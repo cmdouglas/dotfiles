@@ -70,6 +70,9 @@ let g:pymode_rope_complete_on_dot = 0
 " this doesn't work with python3.4 venvs
 let g:pymode_virtualenv=0
 
+" Airline; use powerline-style glyphs and colors
+let g:airline_theme='molokai'
+let g:airline_powerline_fonts = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors and syntax
