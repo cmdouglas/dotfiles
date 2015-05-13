@@ -12,14 +12,24 @@ export PR_RED PR_GREEN PR_YELLOW PR_BLUE PR_WHITE PR_BLACK
 export PR_BOLD_RED PR_BOLD_GREEN PR_BOLD_YELLOW PR_BOLD_BLUE 
 export PR_BOLD_WHITE PR_BOLD_BLACK
 
-# Clear LSCOLORS
-unset LSCOLORS
+if [[ $IS_MAC -eq 1 ]]; then
+	# Clear LSCOLORS
+	unset LSCOLORS
 
-# Main change, you can see directories on a dark background
-#expor tLSCOLORS=gxfxcxdxbxegedabagacad
+	# Main change, you can see directories on a dark background
+	#expor tLSCOLORS=gxfxcxdxbxegedabagacad
+	export LS_COLORS=exfxcxdxbxegedabagacad
+else
+	
+	if [ ! -f '~/.dircolors'] then;
+		dircolors > '~/dircolors'
+	fi
+	
+	dircolors -b "~/.dircolors"
+fi
+
 
 export CLICOLOR=1
-export LS_COLORS=exfxcxdxbxegedabagacad
 
 # Enable color in grep
 export GREP_OPTIONS='--color=auto'
