@@ -33,6 +33,8 @@ set timeoutlen=1000 " wait 1s for mappings to finish
 set ttimeoutlen=100 " wait 0.1s for xterm keycodes to finish
 set nrformats-=octal " don't try to auto-increment 'octal'
 
+" nerdtree-style netrw
+let g:netrw_liststyle=3
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
 "
