@@ -22,7 +22,7 @@ alias l='ls -al'
 if [[ $IS_MAC -eq 1 ]]; then
 	alias ls='ls -GFh' # Colorize output, add file type indicator, and put sizes in human readable format
 else
-	alias ls='ls --color=auto -Gfh'
+	alias ls='ls -GFh --color=auto'
 fi
 alias ll='ls -GFhl' # Same as above, but in long listing format
 alias tree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"

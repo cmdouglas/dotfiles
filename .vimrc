@@ -2,6 +2,7 @@
 execute pathogen#infect()
 execute pathogen#helptags()
 
+set encoding=utf-8
 set nobackup
 set writebackup
 set undodir=~/.vim/undo

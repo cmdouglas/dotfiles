@@ -20,12 +20,10 @@ if [[ $IS_MAC -eq 1 ]]; then
 	#expor tLSCOLORS=gxfxcxdxbxegedabagacad
 	export LS_COLORS=exfxcxdxbxegedabagacad
 else
-	
-	if [ ! -f '~/.dircolors'] then;
-		dircolors > '~/dircolors'
+	if [[ ! -f "$HOME/.dircolors" ]]; then;
+		dircolors -p > "$HOME/.dircolors"
 	fi
-	
-	dircolors -b "~/.dircolors"
+	eval `dircolors -b "$HOME/.dircolors"`;
 fi
 
 
