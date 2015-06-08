@@ -10,5 +10,6 @@ source ~/.zsh/functions.zsh
 source ~/.zsh/history.zsh
 source ~/.zsh/zsh_hooks.zsh
 
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # work stuff
 source ~/.zsh/work.zsh
