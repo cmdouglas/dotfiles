@@ -4,7 +4,7 @@ if [ -x /usr/libexec/path_helper ]; then
 fi
 
 
-PATH=/usr/local/opt/ruby/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
+PATH=/usr/local/opt/ruby/bin:/usr/local/share/npm/bin:/usr/local/sbin:/usr/local/bin:$PATH
 PATH=$HOME/.local/bin:$PATH:
 
 # prepend the active virtualenv to the path
