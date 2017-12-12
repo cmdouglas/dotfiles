@@ -12,4 +12,10 @@ source ~/.zsh/zsh_hooks.zsh
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # work stuff
-source ~/.zsh/work.zsh
+# source ~/.zsh/work.zsh
+source ~/.zsh/work-vpn-cisco.zsh
+
+PATH=/usr/local/opt/ruby/bin:/usr/local/share/npm/bin:/usr/local/sbin:/usr/local/bin:$PATH
+PATH=$HOME/.local/bin:$PATH:
+
+fortune | cowsay
