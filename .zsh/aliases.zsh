@@ -63,8 +63,6 @@ fi
 # -------------------------------------------------------------------
 alias 'psqlstart=/usr/local/pgsql/bin/pg_ctl -D /usr/local/pgsql/data -l logfile start'
 alias 'psqlstop=/usr/local/pgsql/bin/pg_ctl stop'
-alias mysql='mysql -u root'
-alias mysqladmin='mysqladmin -u root'
 
 # gu shows a list of all developers and the number of commits they've made
 alias gu="git shortlog | grep -E '^[^ ]'"
